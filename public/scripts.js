@@ -8,7 +8,6 @@ for (let card of cards) {
     modalOverlay.classList.add('active');
     modalOverlay.querySelector('iframe').src=`https://www.youtube.com/embed/${videoId}`;
   });
-
 }
 
 const closeModal = document.querySelector('.close_modal');
@@ -16,5 +15,4 @@ const closeModal = document.querySelector('.close_modal');
 closeModal.addEventListener('click', () => {
   modalOverlay.classList.remove('active');
   modalOverlay.querySelector('iframe').src="";
-
 });
