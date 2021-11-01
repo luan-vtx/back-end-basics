@@ -12,8 +12,12 @@ nunjucks.configure('views', {
 });
 
 server.get('/', (req, res) => {
-  return res.render('index');
-})
+  return res.render('about');
+});
+
+server.get('/tutorials', (req, res) => {
+  return res.render('tutorials');
+});
 
 const PORT = 3000;
 
