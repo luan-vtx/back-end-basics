@@ -2,6 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 
 const server = express();
+const videosData = require('./data');
 
 server.use(express.static('public'));
 
@@ -16,7 +17,7 @@ server.get('/', (req, res) => {
 });
 
 server.get('/tutorials', (req, res) => {
-  return res.render('tutorials');
+  return res.render('tutorials', { items: videosData });
 });
 
 const PORT = 3000;
