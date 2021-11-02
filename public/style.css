@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
 :root {
-  --color-purple: rgb(98, 24, 182);
+  --color-green: rgb(98, 24, 182);
   --color-violet: #271e47;
   --color-grey: rgba(196, 196, 196, 0.9);
-  --color-green: rgb(26, 202, 3);
+  --color-green: rgb(30, 255, 0);
 }
 
 * {
@@ -39,7 +39,7 @@ header {
 }
 
 .links a:hover {
-  color: var(--color-purple);
+  color: var(--color-green);
   transition: color 700ms;
 }
 
@@ -50,7 +50,7 @@ header {
 
 #wrapper img {
   border-radius: 50%;
-  border: 5px solid var(--color-purple);
+  border: 5px solid var(--color-green);
   margin-bottom: 22px;
   width: 350px;
 }
@@ -76,11 +76,12 @@ header {
 }
 
 #wrapper p a {
-  color: var(--color-purple);
+  color: var(--color-green);
+  text-decoration: none;
 }
 
 #links-footer a {
-  border-bottom: 1px solid var(--color-purple);
+  border-bottom: 1px solid var(--color-green);
 }
 
 /* ===== CARDS ====== */
@@ -95,6 +96,7 @@ header {
 
 .card {
   background-color: var(--color-violet);
+  display: grid;
 }
 
 .card:hover {
@@ -114,6 +116,7 @@ header {
 .card_info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .card_description {

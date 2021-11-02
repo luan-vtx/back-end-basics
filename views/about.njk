@@ -6,15 +6,15 @@
 
 {% block content %}
   <div id="wrapper">
-    <img src="./img/my-photo.jpg" alt="Luan">
-    <h1>Luan Xavier</h1>
-    <h2>Desenvolvedor Full-Stack Júnior</h2>
-    <p>Estudante de desenvolvimento web na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>. Estou em busca do primeiro emprego na área; gosto de futebol, filosofia, literatura, tecnologia e desafios</p>
+    <img src="{{about.avatarUrl}}" alt="Luan">
+    <h1>{{ about.name }}</h1>
+    <h2>{{ about.role }}</h2>
+    <p>{{ about.description }}</p>
   </div>
 
   <div id="footer-links" class="links">
-    <a href="https://github.com/luan-vtx" target="_blank">Github</a>
-    <a href="https://www.instagram.com/luan_vtx/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/luan-vtx/" target="_blank">Linkedin</a>
+    {% for link in about.links %}
+    <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+    {% endfor %}
   </div>
 {% endblock %}
