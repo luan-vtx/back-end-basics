@@ -23,6 +23,16 @@ server.get('/tutorials', (req, res) => {
   return res.render('tutorials', { items: videosData });
 });
 
+server.get('/video/:id', (req, res) => {
+  const { id } = req.params;
+
+  const video = videosData.find((video) => video.id === id );
+
+  if (!video) return res.json({ message: 'Video not found.'});
+
+  return res.render('video', { item: video });
+})
+
 const PORT = 3000;
 
 server.listen(PORT, () => {

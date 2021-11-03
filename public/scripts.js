@@ -5,14 +5,6 @@ for (let card of cards) {
   const videoId = card.getAttribute('id');
 
   card.addEventListener('click', () => {
-    modalOverlay.classList.add('active');
-    modalOverlay.querySelector('iframe').src=`https://www.youtube.com/embed/${videoId}`;
+    window.location.href = `/video/${videoId}`;
   });
 }
-
-const closeModal = document.querySelector('.close_modal');
-
-closeModal.addEventListener('click', () => {
-  modalOverlay.classList.remove('active');
-  modalOverlay.querySelector('iframe').src="";
-});
