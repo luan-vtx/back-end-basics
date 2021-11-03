@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "debug": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3"
+  },
+  "name": "back-end-basics",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luan-vtx/back-end-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luan-vtx/back-end-basics/issues"
+  },
+  "homepage": "https://github.com/luan-vtx/back-end-basics#readme"
+}
