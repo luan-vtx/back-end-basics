@@ -4,6 +4,7 @@ module.exports = [
     title: "Como usar Git e Github na prática | Mayk Brito",
     duration: "33:43 min",
     price: "Free",
+    featured: true,
   },
   {
     id: "HN1UjzRSdBk",
@@ -16,6 +17,7 @@ module.exports = [
     title: "O que é API? REST e RESTful? | Mayk Brito",
     duration: "33:56 min",
     price: "Free",
+    featured: true,
   },
   {
     id: "GSqR2i-Pq6o",
@@ -34,5 +36,6 @@ module.exports = [
     title: "Array: Higher Order Functions | Mayk Brito",
     duration: "54:05 min",
     price: "Free",
+    featured: true,
   },
 ];
